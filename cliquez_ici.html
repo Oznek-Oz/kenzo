@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeCoursier</title>
+ <!-- BOOTSTRAP CSS & JS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./assets/js/color-modes.js"></script>
+
+    <!-- SWIPER CSS  -->
+    <link href="./styles/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="./styles/stylesheet.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar d-flex bg-dark text-white px-4 mb-0 pb-0 justify-content-center">
+            <div class="col-sm-12 d-inline-flex">
+                <img src="./coeur.png" width="50" height="50" class="rounded mr-2" alt="">
+                <h1 class="ms-2">L'<span style="color:pink">amour</span> c'est <span class="text-info fw-bold">Jean 3:16</span></h1>
+            </div>
+            <div class="container col-sm-12 justify-content-center m-0 p-0">
+                <div class="row w-100 m-0 p-0">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <ul class="nav nav-tabs border-0 justify-content-center fs-5" role="tablist">
+                            <li class="nav-item">
+                                <a href="#article" class="nav-link active show" data-toggle="tab" aria-selected="true">C'est par ici <span class="text-info fw-bolder">→</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#mesAchats" class="nav-link" aria-selected="false" role="tab" data-toggle="tab">Clique Ici <span class="text-warning fw-bolder">↓</span></a>
+                            </li>
+                        </ul>
+                        <div class="barre rounded-pill bg-primary" id="barre"></div>
+                    </div>
+                    <div class="col-sm-3 px-0">
+                        <div class="container">
+                            <div class="search">
+                                <div class="circle">
+                                    <div class="stick"></div>
+                                </div>
+                                <input type="text" class="field form-control rounded-pill border-white text-light" style="background-color:rgb(35, 0, 110); border:2px solid rgb(255, 1, 255) !important;" value="Mes frères, Dieu nous aimes. Sont amour n'aura pas de Fin.">
+                                <div class="close">
+                                    <div class="left"></div>
+                                    <div class="right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="">
+        <div class="tab-content" role="tablist">
+            <div class="tab-pane active fade show listeProduits text-center" id="article" role="tabpanel" style="width: 100%;">
+                <p class="fs-4 m-3">Salut toi. Tu as <span class="fw-bold text-success fs-3">réussi</span> à le décompresser. Super, tu es un <span class="fw-bold fs-3 text-primary">goat 😎 !</span></p>
+                <p class="fs-4 m-3 p-0">La suite ?</p><p class="fs-3 text-info m-0 p-0 fs-1 fw-bolder">. . .</p>
+                <p class="fs-4 m-3">Eh bien... tu le vois <span class="text-info fs-3 fw-bolder">là haut ☝?</span> Ouais, là! Tu n'as qu'à suivre ce qu'elle indique 😁.</p>
+            </div>
+            <div class="tab-pane fade px-5" id="mesAchats" role="tabpanel">
+                <p class="text-dark m-3 fs-4 ms-5 ps-5">Alors, ta réponse ??? Mais <span class="text-danger fw-bolder fs-3">attention...</span> 🤭</p>
+                <div class="container-fluid container-achats p-0">
+                    <div class="row p-0">
+                        <div class="col-md-8 text-white achats justify-content-center">
+                            <div class="wraper">
+                                <div class="box bg-transparent rounded-4 p-5 pb-4">
+                                    <h3 class="question fw-bold">Do you <span class="fw-bold">love</span> me <span>?</span></h3>
+                                    <hr class="mb-4 mt-3 border-2 bg-success rounded-pill">
+                                    <div class="d-flex justify-content-around p-3">
+                                        <div class="coeurs bg-transparent"></div>
+                                        <button class="btn btn-outline-success yes fw-bold" style="font-family: cursive;">Yes</button>
+                                        <button class="btn btn-dark no fw-bold" style="font-family: cursive;">No</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlayBox d-none"></div>
+                            <div class="message text-center bg-light rounded-4 p-4 shadow d-none">
+                                <div class="cadreBox text-center bg-transparent  fw-bold rounded-4 p-3">
+                                    <h3 class="bravo fw-bold text-success">Bravo <span class="text-warning">☺☻</span>!!!</h3><br>
+                                    <p>Félicitation pour avoir réussi...</p>
+                                    <p>Sache donc que moi aussi, je t'aime.</p>
+                                    <p>Mais tu sais quoi ? ... Non ?</p>
+                                    <p>Eh bien, <span class="fw-bold text-success fs-5">Jésus-Christ</span> t'aime encore <span>PLUS♥+♥+♥+.</span></p>
+                                    <p class="text-dark">Salut...</p>
+                                    <button class="btn btn-danger fermer">Fermer</button>
+                                </div>
+                            </div>
+                            <div class="capturer text-center bg-warning text-success rounded-4 p-4 shadow d-none fw-bold" ><p cl>Attrapé !!😔</p><p>C'est pas sympa !!😔😔</p></div>
+                        </div>
+                        <div class="col-md-4 facture bg-light mx-0 justify-content-center align-items-center">
+                            <br><br><br><br><br>
+                            <p class="text-center d-none" id="texte1">Tu essaies de dire non, là ? 😂😂😂</p>
+                            <p class="text-center d-none" id="texte2">Essaie "Yes" pour voir 😉</p>
+                            <p class="texte-center d-none" id="texte3">Tu continue hein ?🤣🤣🤣🤣. Du courage boss!!🤣</p><br>
+                            <hr>
+                            <div  class="d-none" style="color: rgb(56, 0, 89);" id="verset">
+                                <p><span class="fw-bold fs-3" style="color:chocolate">Jean 13:34</span></p>
+                                <p class="fs-4">Je vous donne un commandement nouveau: <span class="fw-bold fs-3 text-warning">Aimez-vous</span> les uns les autres; 
+                                    <span>comme</span> je vous ai aimés, <span class="fw-bold fs-3 text-warning">vous aussi</span>, aimez-vous les uns les autres.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    <footer class="bg-light">
+        <embed src="" type="">
+    </footer>
+    
+    <!-- script navigation -->
+    <script src="./js/navigation/jquery-slim.min.js"></script>
+    <script src="./js/navigation/util.js"></script>
+    <script src="./js/navigation/tab.js"></script>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<!-- SWIPER JS  -->
+<script src="./js/swiper-bundle.min.js" defer></script>
+
+<script src="./js/script.js"></script>
+<script src="./js/produits.js" defer></script>
+<script src="./js/mes_achats.js" defer></script>
+
+
+
+</html>
